@@ -8,6 +8,12 @@ Currently, this generator is adapted for working with a Sails backend, although 
 
 The generator allows creating entities automatically in a table form from where you can create, read, update and remove each database record.
 
+
+## Video Tutorial
+
+[![Angular CRUD](http://www.jlmonteagudo.com/wp-content/uploads/2015/04/generator-angular-crud-readme.png)](http://youtu.be/O_AqjE7e_As)
+
+
 ## Backend with Sails
 
 At first place, you will have to create your API with Sails. However, when you get a list of records, Sails won't give you information regarding the total records, so you can't paginate properly. For example, if I request this: http://localhost:1337/customer, I get the following information:
