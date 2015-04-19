@@ -26,7 +26,7 @@ At first place, you will have to create your API with Sails. However, when you g
 ]
 ```
 
-But if I have to paginate I need information regarding the total number of records. So, I have to override the **find** blueprint. To do this, you have to copy from this project the file [sails/api/blueprints/find.js](https://raw.githubusercontent.com/jlmonteagudo/generator-hottowel-table/master/sails/api/blueprints/find.js) into your **ROOT_PROJECT/api/blueprints/find.js**. Now, if I request this: http://localhost:1337/customer, I will get the following information:
+But if I have to paginate I need information regarding the total number of records. So, I have to override the **find** blueprint. To do this, you have to copy from this project the file [sails/api/blueprints/find.js](https://raw.githubusercontent.com/jlmonteagudo/generator-angular-crud/master/sails/api/blueprints/find.js) into your **ROOT_PROJECT/api/blueprints/find.js**. Now, if I request this: http://localhost:1337/customer, I will get the following information:
 
 ```
 {

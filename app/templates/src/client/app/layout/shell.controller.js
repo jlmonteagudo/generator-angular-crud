@@ -14,8 +14,8 @@
         $rootScope.showSplash = true;
         vm.navline = {
             title: config.appTitle,
-            text: 'Created by John Papa',
-            link: 'http://twitter.com/john_papa'
+            text: 'Developed with generator-angular-crud',
+            link: 'https://github.com/jlmonteagudo/generator-angular-crud'
         };
 
         activate();

@@ -11,7 +11,8 @@
         var vm = this;
         vm.news = {
             title: '<%= appName %>',
-            description: 'Hot Towel Angular is a SPA template for Angular developers.'
+            description: 'generator-angular-crud allows creating entities ' +
+                          'and CRUD operations very productively for AngularJS applications'
         };
         vm.messageCount = 0;
         vm.people = [];
