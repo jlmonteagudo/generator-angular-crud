@@ -18,7 +18,14 @@
     "feature"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "angularjs",
+    "angular",
+    "mean",
+    "meanjs",
+    "sails",
+    "sailsjs",
+    "crud"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
