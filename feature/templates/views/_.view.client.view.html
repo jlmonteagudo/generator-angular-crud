@@ -1,0 +1,30 @@
+<section class="mainbar" data-ng-init="vm.toView<%= featureSingularName %>()">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+			<%= featureSingularName %> View
+    </div>
+    <div class="panel-body">
+
+      <form novalidate>
+        <formly-form model="vm.<%= camelizedSingularName %>" fields="vm.formFields">
+        </formly-form>
+      </form>
+
+      <hr/>
+      <div>
+        <a class="btn btn-success" href="/<%= slugifiedName %>/{{vm.<%= camelizedSingularName %>.id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i> Edit
+        </a>
+        <a class="btn btn-danger" title="Remove" ng-really-message="Are you sure ?" ng-really-click="vm.remove()" item="vm.<%= camelizedSingularName %>">
+          <i class="glyphicon glyphicon-remove-circle"></i> Delete
+        </a>
+        <a class="btn btn-primary" href="/<%= slugifiedName %>">
+          <i class="glyphicon glyphicon-list"></i> List <%= featurePluralName %>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>

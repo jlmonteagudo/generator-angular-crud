@@ -1,0 +1,33 @@
+<section class="mainbar" data-ng-init="vm.setFormFields()">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      New <%= featureSingularName %>
+    </div>
+    <div class="panel-body">
+
+      <form data-ng-submit="vm.create()" novalidate>
+
+        <formly-form model="vm.<%= camelizedSingularName %>" fields="vm.formFields" form="vm.form">
+        </formly-form>
+
+        <hr/>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success" ng-disabled="vm.form.$invalid">
+              <i class="glyphicon glyphicon-ok"></i> Save
+            </button>
+            <a class="btn btn-danger" href="/<%= slugifiedName %>">
+              <i class="glyphicon glyphicon-remove"></i> Cancel
+            </a>
+        </div>
+
+        <div data-ng-show="vm.error" class="alert alert-danger form-group">
+          <strong data-ng-bind="vm.error"></strong>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</section>

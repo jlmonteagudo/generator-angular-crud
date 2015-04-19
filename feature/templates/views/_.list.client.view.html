@@ -1,0 +1,38 @@
+<section class="mainbar">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <%= featureSingularName %> List
+    </div>
+    <div class="panel-body">
+
+      <div class="pull-right">
+        <a type="button" class="btn btn-success" href="/<%= slugifiedName %>/create">
+          <i class="glyphicon glyphicon-open"></i> New <%= featureSingularName %>
+        </a>
+      </div>
+
+      <table ng-table="vm.tableParams" show-filter="true" class="table table-condensed table-striped">
+          <tr ng-repeat="<%= camelizedSingularName %> in $data">
+              <td data-title="'Name'" sortable="'name'" filter="{ 'name': 'text' }">{{<%= camelizedSingularName %>.name}}</td>
+              <td data-title="'Address'" sortable="'address'" filter="{'address': 'text'}">{{<%= camelizedSingularName %>.address}}</td>
+              <td>
+                 <div class="table-actions">
+                      <a class="btn btn-default" title="View" href="/<%= slugifiedName %>/{{<%= camelizedSingularName %>.id}}">
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                      </a>
+                      <a class="btn btn-default" title="Edit" href="/<%= slugifiedName %>/{{<%= camelizedSingularName %>.id}}/edit">
+                        <span class="glyphicon glyphicon-edit"></span>
+                      </a>
+                      <a class="btn btn-danger" title="Remove" ng-really-message="Are you sure ?" ng-really-click="vm.remove(<%= camelizedSingularName %>)" item="<%= camelizedSingularName %>">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                      </a>
+                  </div>
+              </td>
+          </tr>
+      </table>
+
+    </div>
+  </div>
+
+</section>
