@@ -8,6 +8,9 @@ Currently, this generator is adapted for working with a Sails backend, although 
 
 The generator allows creating entities automatically in a table form from where you can create, read, update and remove each database record.
 
+## Demo Application
+
+You can see a demo application developed with generator-angular-crud at [Angular CRUD Demo](http://45.55.146.80:8080/)
 
 ## Video Tutorial
 
