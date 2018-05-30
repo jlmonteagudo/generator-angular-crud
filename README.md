@@ -85,7 +85,7 @@ $ yo angular-crud:feature <customer>
 
 This will create an AngularJS application supporting full CRUD functionality.
 
-This subgenerator will create an entity with two properties called 'name' and 'street'. If we want to add new properties to our entity, we weed to follow these steps:
+This subgenerator will create an entity with two properties called 'name' and 'street'. If we want to add new properties to our entity, we need to follow these steps:
 
 * Add new properties to the angular-formly array properties in src/client/app/**feature-name**/services/**feature-name**.form.client.service.js
 * Add new columns for the new properties in the HTML table in src/client/app/**feature-name**/views/list.html
